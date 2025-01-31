@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-crime-data": "node src/scripts/generate-crime-data.js"
+    "generate-crime-data": "node src/scripts/generate-crime-data.js",
+    "minify-heatmap": "terser src/lib/heatmap-source/heatmap-source.js -o src/lib/leaflet-heat.js -c -m"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
@@ -35,6 +36,7 @@
     "@types/leaflet": "^1.9.4",
     "autoprefixer": "10.4.15",
     "postcss": "8.4.29",
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "3.3.3",
+    "terser": "^5.37.0"
   }
 }
