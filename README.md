@@ -12,11 +12,11 @@ This project serves as a proof of concept for the enhanced Leaflet Heat library 
 <tr style="border: none;">
 <td style="border: none;">
 <h4>Before</h4>
-<img src="before.gif" width="250" alt="Before implementation showing laggy drag">
+<img src="./public/before.gif" width="250" alt="Before implementation showing laggy drag">
 </td>
 <td style="border: none;">
 <h4>After</h4>
-<img src="after.gif" width="250" alt="After implementation showing smooth drag">
+<img src="./public/after.gif" width="250" alt="After implementation showing smooth drag">
 </td>
 </tr>
 </table>
