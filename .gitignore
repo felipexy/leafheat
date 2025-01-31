@@ -1,0 +1,48 @@
+# Dependências
+/node_modules
+/.pnp
+.pnp.js
+
+# Arquivos de ambiente
+.env*.local
+.env
+
+# Builds e cache
+.next
+out
+.cache
+.next/static/chunks/grafana
+.next/static/chunks/nextra
+
+# Logs e diagnósticos
+*.log
+logs
+.npm
+.yarn-integrity
+debug
+
+# Sistema operacional
+.DS_Store
+*.swp
+*.swo
+
+# Testes
+/coverage
+.nyc_output
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Configurações específicas do Next.js
+next-env.d.ts
+
+# Deploy
+.vercel
+.serverless
+
+# Variáveis de ambiente de desenvolvimento
+.env.development.local
+.env.test.local
+.env.production.local 

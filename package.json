@@ -1,0 +1,40 @@
+{
+  "name": "teste",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-crime-data": "node src/scripts/generate-crime-data.js"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/leaflet.heat": "^0.2.2",
+    "@types/ngeohash": "^0.6.5",
+    "@types/node": "18.15.10",
+    "@types/react": "18.0.29",
+    "@types/react-dom": "18.0.11",
+    "d3-quadtree": "^3.0.1",
+    "eslint": "8.36.0",
+    "eslint-config-next": "^13.4.12",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.474.0",
+    "next": "^13.4.12",
+    "ngeohash": "^0.6.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "tailwind-merge": "^3.0.1",
+    "typescript": "5.0.2",
+    "worker-loader": "^3.0.8"
+  },
+  "devDependencies": {
+    "@types/d3-quadtree": "^3.0.3",
+    "@types/leaflet": "^1.9.4",
+    "autoprefixer": "10.4.15",
+    "postcss": "8.4.29",
+    "tailwindcss": "3.3.3"
+  }
+}
