@@ -24,7 +24,7 @@ const Map = () => {
   const { loadingHeatmap, setLoadingHeatmap } = useGlobalContext();
 
   // Center coordinates for New York City
-  const center: LatLngExpression | undefined = [40.7128, -74.0060];
+  const center: LatLngExpression | undefined = [40.7128, -74.006];
 
   // Toggle heatmap visibility and update related states
   const handleClick = () => {
@@ -37,7 +37,7 @@ const Map = () => {
     <MapContainer
       className="relative z-0"
       center={center}
-      zoom={13}
+      zoom={16}
       minZoom={3}
       renderer={L.svg({ padding: 80 })} // SVG renderer with padding for better performance
     >
