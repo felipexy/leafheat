@@ -13,7 +13,12 @@ This project serves as a proof of concept for the enhanced Leaflet Heat library 
 
 > **Note**: This demo uses synthetic data generated for demonstration purposes only. The data points do not represent real-world information and are created solely to showcase the library's capabilities and performance optimizations.
 
+
+## Demo
+
+![Before](https://firebasestorage.googleapis.com/v0/b/opalloo.appspot.com/o/LeafletHeatSmooth/before.gif?alt=media&token=99163262-54cb-4ec9-8240-66fd54f061b2)
   
+![After](https://firebasestorage.googleapis.com/v0/b/opalloo.appspot.com/o/LeafletHeatSmooth/after.gif?alt=media&token=50776e4c-0724-4894-a298-68c12eeb840f)
 
 ## Getting Started
 
@@ -28,9 +33,7 @@ First, install the dependencies:
   
 
 ```bash
-
 yarn  install
-
 ```
 
   
@@ -44,9 +47,7 @@ Then, run the development server:
   
 
 ```bash
-
 yarn  dev
-
 ```
 
   
