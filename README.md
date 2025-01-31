@@ -13,12 +13,40 @@ This project serves as a proof of concept for the enhanced Leaflet Heat library 
 
 > **Note**: This demo uses synthetic data generated for demonstration purposes only. The data points do not represent real-world information and are created solely to showcase the library's capabilities and performance optimizations.
 
+  
 
 ## Demo
 
-![Before](https://firebasestorage.googleapis.com/v0/b/opalloo.appspot.com/o/LeafletHeatSmooth/before.gif?alt=media&token=99163262-54cb-4ec9-8240-66fd54f061b2)
+
+<table>
+
+<tr>
+
+<td>
+
+<h4>Before</h4>
+
+<img  src="https://firebasestorage.googleapis.com/v0/b/opalloo.appspot.com/o/LeafletHeatSmooth%2Fbefore.gif?alt=media&token=99163262-54cb-4ec9-8240-66fd54f061b2"  width="250">
+
+</td>
+
+<td>
+
+<h4>After</h4>
+
+<img  src="https://firebasestorage.googleapis.com/v0/b/opalloo.appspot.com/o/LeafletHeatSmooth%2Fafter.gif?alt=media&token=50776e4c-0724-4894-a298-68c12eeb840f"  width="250">
+
+</td>
+
+</tr>
+
+</table>
+
   
-![After](https://firebasestorage.googleapis.com/v0/b/opalloo.appspot.com/o/LeafletHeatSmooth/after.gif?alt=media&token=50776e4c-0724-4894-a298-68c12eeb840f)
+
+The GIFs above demonstrate the improvement in drag performance. The "Before" GIF shows the original implementation with noticeable lag and visual artifacts during map dragging, while the "After" GIF showcases the enhanced version with smooth, responsive dragging and consistent visual quality during map navigation.
+
+  
 
 ## Getting Started
 
@@ -33,7 +61,9 @@ First, install the dependencies:
   
 
 ```bash
+
 yarn  install
+
 ```
 
   
@@ -47,7 +77,9 @@ Then, run the development server:
   
 
 ```bash
+
 yarn  dev
+
 ```
 
   
@@ -165,7 +197,9 @@ If you need to modify the heatmap functionality, follow these steps:
   
 
 ```bash
+
 yarn  minify-heatmap
+
 ```
 
   
@@ -180,15 +214,9 @@ The minification step is crucial as it:
 
 - Optimizes the code for production
 
-  
-
 - Reduces file size
 
-  
-
 - Ensures compatibility across browsers
-
-  
 
 - Creates the final version used by the application
 
@@ -208,15 +236,9 @@ The library supports extensive customization of the LOD (Level of Detail) system
 
 - LOD zoom level breakpoints
 
-  
-
 - Intensity levels for each LOD
 
-  
-
 - Quadtree cell sizes
-
-  
 
 - Visual parameters (radius, blur, gradient, opacity)
 
@@ -236,19 +258,35 @@ The application implements a dedicated Web Worker for efficient point clustering
 
 -  **Asynchronous Processing**: Handles point clustering in a separate thread to maintain UI responsiveness
 
+  
+
 -  **Geohash-based Clustering**: Groups nearby points using geohash precision levels
+
+  
 
 -  **Multi-level LOD Processing**: Creates different detail levels simultaneously:
 
-	- Ultra-low: Highest clustering for zoom levels 1-5
+  
 
-	- Mid-low: Medium clustering for zoom levels 6-10
+- Ultra-low: Highest clustering for zoom levels 1-5
 
-	- Mid: Lower clustering for zoom levels 11-14
+  
 
-	- High: No clustering for zoom levels 15+
+- Mid-low: Medium clustering for zoom levels 6-10
+
+  
+
+- Mid: Lower clustering for zoom levels 11-14
+
+  
+
+- High: No clustering for zoom levels 15+
+
+  
 
 -  **Intensity Weighting**: Maintains intensity information through weighted averages during clustering
+
+  
 
 -  **Memory Efficient**: Processes points in batches and releases memory after clustering
 
