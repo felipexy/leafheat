@@ -75,14 +75,6 @@ This project includes a modified version of the Leaflet heat layer that implemen
 
 - Reduces visual artifacts during map navigation
 
-#### Canvas Optimizations
-
-- Uses `willReadFrequently: true` flag for better canvas performance
-
-- Implements efficient pixel manipulation strategies
-
-- Optimizes memory usage during rendering
-
 #### Spatial Query Improvements
 
 - Utilizes quadtree spatial indexing for faster point queries
@@ -108,16 +100,6 @@ yarn  minify-heatmap
 ```
 
 3. This will create/update `leaflet-heat.js` which is the actual library used by the application
-
-The minification step is crucial as it:
-
-- Optimizes the code for production
-
-- Reduces file size
-
-- Ensures compatibility across browsers
-
-- Creates the final version used by the application
 
 These optimizations significantly improve performance when dealing with large datasets while maintaining visual quality appropriate for each zoom level.
 
