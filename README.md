@@ -1,4 +1,5 @@
-# Leaflet Heat + Smooth Drag + Level of Detail
+# LeafHeat
+## Leaflet Heat + Smooth Drag + Level of Detail
 
 This is a demonstration application showcasing a modified version of the Leaflet Heat library. The original library has been enhanced with additional features including smooth drag operations and level of detail (LOD) rendering. These modifications were specifically implemented to handle large datasets more efficiently through various performance optimizations such as a quadtree-based LOD system and canvas optimizations.
 
